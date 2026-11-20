@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Clearer npm description and keywords, and a homepage with a guide, examples and FAQ: https://oss.saimulislam.com/mcp-guardrails/
+
 ## 0.1.0
 
 Initial release.

@@ -1,6 +1,6 @@
 {
   "name": "mcp-guardrails",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP security for servers that let AI agents change data: dry run and confirm, signed preview tokens, version checks and undo.",
   "keywords": [
     "mcp security",
