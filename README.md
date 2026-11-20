@@ -1,10 +1,12 @@
 # mcp-guardrails
 
-Safety rails for MCP servers that let AI agents change data.
+MCP security for servers that let AI agents change data: safety rails with dry run, confirm, preview tokens and undo.
 
 [![npm version](https://img.shields.io/npm/v/mcp-guardrails)](https://www.npmjs.com/package/mcp-guardrails)
 [![license](https://img.shields.io/npm/l/mcp-guardrails)](https://www.npmjs.com/package/mcp-guardrails)
 [![node](https://img.shields.io/node/v/mcp-guardrails)](https://www.npmjs.com/package/mcp-guardrails)
+
+Guide, examples and FAQ: https://oss.saimulislam.com/mcp-guardrails/
 
 The same guardrails protect the MCP servers of [Sitessa](https://sitessa.com) and the [Bundlewise CRM](https://crm.bundlewise.app).
 
