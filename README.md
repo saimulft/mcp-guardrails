@@ -1,14 +1,43 @@
-# mcp-guardrails
+<h1 align="center">mcp-guardrails</h1>
 
-MCP security for servers that let AI agents change data: safety rails with dry run, confirm, preview tokens and undo.
+<p align="center">
+  MCP security for servers that let AI agents change data: safety rails with dry run, confirm, preview tokens and undo.
+</p>
 
-[![npm version](https://img.shields.io/npm/v/mcp-guardrails)](https://www.npmjs.com/package/mcp-guardrails)
-[![license](https://img.shields.io/npm/l/mcp-guardrails)](https://www.npmjs.com/package/mcp-guardrails)
-[![node](https://img.shields.io/node/v/mcp-guardrails)](https://www.npmjs.com/package/mcp-guardrails)
+<p align="center">
+  <a href="https://www.npmjs.com/package/mcp-guardrails"><img alt="npm version" src="https://img.shields.io/npm/v/mcp-guardrails" /></a>
+  <a href="https://www.npmjs.com/package/mcp-guardrails"><img alt="license" src="https://img.shields.io/npm/l/mcp-guardrails" /></a>
+  <a href="https://www.npmjs.com/package/mcp-guardrails"><img alt="node" src="https://img.shields.io/node/v/mcp-guardrails" /></a>
+</p>
 
-Guide, examples and FAQ: https://oss.saimulislam.com/mcp-guardrails/
+<p align="center">
+  <a href="https://oss.saimulislam.com/mcp-guardrails/">Guide, examples and FAQ</a> ·
+  <a href="https://www.npmjs.com/package/mcp-guardrails">npm</a> ·
+  <a href="https://github.com/saimulft/mcp-guardrails">GitHub</a> ·
+  <a href="https://github.com/saimulft/mcp-guardrails/blob/main/CHANGELOG.md">Changelog</a>
+</p>
+
+<p align="center">
+  <a href="https://oss.saimulislam.com/mcp-guardrails/">
+  <img alt="An agent deleting a note through an MCP server: the first call is refused with confirmation_required, a dry run returns the plan and a preview token, the user agrees, the confirmed call deletes it, a token for another note is refused, and the revision restores it" src="https://oss.saimulislam.com/shots/mcp-guardrails/flow.webp" width="880" />
+  </a>
+</p>
+
+<p align="center">
+  <b>Refused, previewed, confirmed, undoable.</b> The tool calls an agent makes to delete one note, with the replies mcp-guardrails sends back at each step.
+</p>
 
 The same guardrails protect the MCP servers of [Sitessa](https://sitessa.com) and the [Bundlewise CRM](https://crm.bundlewise.app).
+
+## See it work
+
+### Errors that say what to do next
+
+A refusal carries the current version or the real field names, so the agent can fix its call instead of guessing.
+
+<img alt="Two refused tool calls: a stale version answered with version_conflict and the current version, and a misspelled field answered with unknown_field and didYouMean title" src="https://oss.saimulislam.com/shots/mcp-guardrails/errors.webp" width="880" />
+
+More examples and the FAQ are on the [guide](https://oss.saimulislam.com/mcp-guardrails/).
 
 ## The problem
 
